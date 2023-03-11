@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./utils.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./breakpoints.css"/>
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- swiper -->
+    <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script defer src="./app.js"></script>
+
+    <title>Furnitur</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1>Furnitur</h1>
+            <ul class="desktop-nav-lists">
+                <l1>Service</l1>
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>Get In Touch</li>
+            </ul>
+        </nav>
+        <div class="header-socials">
+            <i class='bx bxl-twitter bx-sm'></i>
+            <i class='bx bxl-facebook-circle bx-sm'></i>
+            <i class='bx bxl-instagram-alt bx-sm'></i>
+        </div>
+
+        <i drawer-icon id="drawer-icon" class="bx bx-menu bx-sm"></i>
+        <!-- <button drawer-icon class="drawer-icon">Open</button> -->
+
+    </header>
+
+    <body>
+
+        <!-- mobile nav -->
+        <div mobile-nav class="mobile-nav">
+            <div class="m-n-wrap">
+                <button mobile-nav-close class="m-n-close">Close</button>
+                <ul class="m-n-lists">
+                    <l1>Service</l1>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <li>Get In Touch</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero container interval">
+            <section class="hero-texts">
+                <h1 class="h-t-main">
+                    <span class="span-block">Howdy, we're</span>
+                    <span class="span-block">your best friend</span>
+                </h1>
+                
+                <p class="h-t-sub">
+                    <span class="span-block">We know that you really need us,</span>
+                    <span class="span-block">so do we need you</span>
+                </p>
+
+                <div class="h-t-btns">
+                    <button class="h-t-b-main btn">Our Products</button>
+                    <button class="h-t-b-sub btn">Our Products</button>
+                </div>
+            </section>
+
+            <img src="./images/1.jpg" class="hero-img"/>
+        </div>
+
+        <div class="mission container interval">
+            <h2 class="mission-text-main">
+                <span class="span-block">You're One of</span>
+                <span class="span-block">Our Missions</span>
+            </h2>
+
+            <article class="mission-article">
+                <p class="m-a-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui, minima veritatis sapiente eum necessitatibus in, doloribus cum voluptate nulla aliquid perspiciatis maiores facere magni quo laboriosam. Nostrum, minus delectus!</p>
+                <p class="m-a-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum maiores magni magnam vero.</p>
+                <button class="m-btn">More About Us</button>
+            </article>
+        </div>
+
+
+        <swiper-container class="projects container interval" slides-per-view="3" loop="true" grab-cursor="true" 
+            space-between="20" 
+            autoplay-delay="2500" autoplay-disable-on-interaction="false"
+        >
+            <swiper-slide class="p-wrap">
+                <img src="./images/7.jpg" class="p-image"/>
+            </swiper-slide>
+            <swiper-slide class="p-wrap">
+                <img src="./images/2.jpg" class="p-image"/>
+            </swiper-slide>
+            <swiper-slide class="p-wrap">
+                <img src="./images/3.jpg" class="p-image"/>
+            </swiper-slide>
+            <swiper-slide class="p-wrap">
+                <img src="./images/4.jpg" class="p-image"/>
+            </swiper-slide>
+            <swiper-slide class="p-wrap">
+                <img src="./images/5.jpg" class="p-image"/>
+            </swiper-slide>
+            <swiper-slide class="p-wrap">
+                <img src="./images/6.jpg" class="p-image"/>
+            </swiper-slide>
+        </swiper-container>
+
+
+        <div class="service container interval">
+            <div class="service-content">
+                <div class="s-c-main">
+                    <h3 class="s-c-m-title">
+                        <span class="span-block">We're trying to</span>
+                        <span class="span-block">be the best</span>
+                    </h3>
+
+                    <p class="s-c-m-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis</p>
+                </div>
+
+                <section class="s-c-sub">
+                    <div class="s-c-s-wrap">
+                        <p class="s-c-s-title">Concept</p>
+                        <p class="s-c-s-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, iure.</p>
+                    </div>
+
+                    <div class="s-c-s-wrap">
+                        <p class="s-c-s-title">Creating</p>
+                        <p class="s-c-s-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, iure.</p>
+                    </div>
+
+                    <div class="s-c-s-wrap">
+                        <p class="s-c-s-title">Testing</p>
+                        <p class="s-c-s-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, iure.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="contact container interval">
+            <img src="./images/10.jpg" class="contact-img"/>
+
+            <section class="contact-text">
+                <h2 class="c-t-main">
+                    <span class="span-block">Hi! I think we need</span>
+                    <span class="span-block">to talk. Shall we?</span>
+                </h2>
+
+                <p class="c-t-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. lum repellendus placeat. Quasi.</p>
+                
+                <button class="c-btn btn">Contact Us</button>
+            </section>
+        </div>
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="f-main">
+                <h3 class="f-m-text">
+                    <span class="span-block">Ready for some awesome to</span>
+                    <span class="span-block">the next level with us?</span>
+                </h3>
+
+                <button class="f-m-btn btn">Get Started</button>
+            </div>
+
+            <hr class="f-divider"/>
+
+            <div class="f-contents">
+                <div class="f-c-wrap">
+                    <h4 class="f-c-title">f-c-title</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus odio nisi sed ea? Provident!</p>
+                </div>
+    
+                <div class="f-c-wrap">
+                    <h4 class="f-c-title">Our Company</h4>
+                    <p>About us</p>
+                    <p>Our Services</p>
+                    <p>Our Pricing</p>
+                    <p>Frequently Asked Questions</p>
+                </div>
+    
+                <div class="f-c-wrap"> 
+                    <h4 class="f-c-title">Newsletter</h4>
+                    <div class="f-newslet">
+                        <input placeholder="Type your email" class="f-n-input"/>
+                        <button class="f-n-btn">Start</button>
+                    </div>
+                    <p class="f-c-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

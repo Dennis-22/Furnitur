@@ -1,0 +1,97 @@
+@media screen and (min-width: 850px) {
+    .service{
+        height: 500px;
+        background-image: url('./images/8.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .service-content{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .service-content{display: flex; flex-direction: column; gap: 20px;}
+    .s-c-main{width: 100%;}
+    .s-c-sub{flex-direction: column; width: 100%;}
+    .s-c-s-wrap{width:100%}
+}
+
+@media screen and (max-width: 1020px) {
+    .f-newslet{flex-direction: column; align-items: flex-start; gap: 10px;}
+    .f-n-btn{padding: .5rem .9rem;}
+}
+
+@media screen and (max-width: 850px){
+    .service-content{flex-direction: column; align-items: flex-start; justify-content: flex-end;}
+}
+
+@media screen and (max-width:768px) {
+    .header{justify-content: space-between; align-items: center;}
+    .nav{width:25%;}
+    .desktop-nav-lists{display: none;}
+    .header-socials{width:40%;}
+    #drawer-icon{display: block;}
+
+    .mobile-nav{
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #19191985;
+        z-index: 2;
+    }
+    
+    .m-n-wrap{
+        position: relative;
+        padding: 20px;
+        background-color: var(--faint-white);
+        border-radius: 5px;
+    }
+
+    .m-n-close{
+        position: absolute;
+        right: 20px;
+    }
+    
+    .m-n-lists{
+        margin-top: 50px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .m-n-lists >li{
+        margin: 15px 0;
+        cursor: pointer;
+    }
+
+    .hero{flex-direction: column;}
+    .hero-texts{width: 100%;}
+    .h-t-btns{flex-direction: column;}
+    .hero-img{width: 100%;}
+
+    .mission{flex-direction: column;}
+    .mission-text-main{width: 100%;}
+    .mission-article{width: 100%;}
+    .mission-article{margin-top: 20px;}
+
+    .p-wrap{width: 95% !important;}
+    
+    .contact{flex-direction: column;}
+    .contact-img{width: 100%;}
+    .contact-text{width: 100%; margin-top: 20px;}
+    .c-t-sub{width: 80%;}
+
+    .f-main{flex-direction: column; align-items: flex-start; gap: 30px;}
+    .f-contents{flex-direction: column; gap: 30px;}
+    .f-c-wrap{width: 100%;}
+}

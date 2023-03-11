@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* font size */
+    --large-font: 1.8rem;
+    --semi-large-font:1.5rem;
+    --normal-font:1.2rem;
+    --small-font:.8rem;
+
+    /* font weight */
+    --bold: 700;
+    --semi-bold:600;
+    --light:300;
+
+    /* colors */
+    --black: #010101;
+    --black-2:#333333d0;
+    --faint-white: #E7E7E7;
+    --faint-black: #2A2A2A;
+}
+
+body{
+    width: 100vw;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interval{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.btn{
+    all:unset;
+    cursor: pointer;
+    padding: .5rem .9rem;
+    font-weight: var(--bold);
+}
+
+.span-block{
+    display: block;
+}
+
+/* styles for all icons */
+.bx{
+    cursor: pointer;
+    color: var(--black-2);
+}
+
+@media screen and (max-width:768px) {
+    .container{width: 95%;}
+    .interval{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
