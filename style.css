@@ -44,11 +44,17 @@
 
 .h-t-main{
     font-size: var(--large-font);
+    /* below will all change to 1 js*/
+    opacity: 0;
+    transform: scale(.5);
 }
 
 .h-t-sub{
     margin: 2rem 0;
     line-height: 1.6;
+    /*below will change to 1 and 0 in js respectively*/
+    opacity: 0; 
+    transform: translateY(-50px);
 }
 
 .h-t-btns{

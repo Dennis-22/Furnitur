@@ -11,12 +11,12 @@
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
     <!-- swiper -->
-    <!-- <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    /> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    
     <script defer src="./app.js"></script>
 
     <title>Furnitur</title>
@@ -26,11 +26,11 @@
         <nav class="nav">
             <h1>Furnitur</h1>
             <ul class="desktop-nav-lists">
-                <l1>Service</l1>
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>Blog</li>
-                <li>Get In Touch</li>
+                <l1 nav-list move-to="service">Service</l1>
+                <li nav-list move-to="mission">About Us</li>
+                <li nav-list move-to="contact">Contact</li>
+                <li nav-list move-to="projects">Blog</li>
+                <li nav-list move-to="footer">Get In Touch</li>
             </ul>
         </nav>
         <div class="header-socials">
@@ -51,23 +51,24 @@
             <div class="m-n-wrap">
                 <button mobile-nav-close class="m-n-close">Close</button>
                 <ul class="m-n-lists">
-                    <l1>Service</l1>
-                    <li>About Us</li>
-                    <li>Contact</li>
-                    <li>Blog</li>
-                    <li>Get In Touch</li>
+                    <l1 mobile-nav-list move-to="service">Service</l1>
+                    <li mobile-nav-list move-to="mission">About Us</li>
+                    <li mobile-nav-list move-to="contact">Contact</li>
+                    <li mobile-nav-list move-to="projects">Blog</li>
+                    <li mobile-nav-list move-to="footer">Get In Touch</li>
                 </ul>
             </div>
         </div>
+        <!-- end of mobile nav -->
 
         <div class="hero container interval">
             <section class="hero-texts">
-                <h1 class="h-t-main">
+                <h1 hero-main-text class="h-t-main">
                     <span class="span-block">Howdy, we're</span>
                     <span class="span-block">your best friend</span>
                 </h1>
                 
-                <p class="h-t-sub">
+                <p hero-sub-text class="h-t-sub">
                     <span class="span-block">We know that you really need us,</span>
                     <span class="span-block">so do we need you</span>
                 </p>
@@ -81,7 +82,7 @@
             <img src="./images/1.jpg" class="hero-img"/>
         </div>
 
-        <div class="mission container interval">
+        <div mission class="mission container interval">
             <h2 class="mission-text-main">
                 <span class="span-block">You're One of</span>
                 <span class="span-block">Our Missions</span>
@@ -95,7 +96,7 @@
         </div>
 
 
-        <swiper-container class="projects container interval" slides-per-view="3" loop="true" grab-cursor="true" 
+        <swiper-container projects class="projects container interval" slides-per-view="3" loop="true" grab-cursor="true" 
             space-between="20" 
             autoplay-delay="2500" autoplay-disable-on-interaction="false"
         >
@@ -120,7 +121,7 @@
         </swiper-container>
 
 
-        <div class="service container interval">
+        <div service class="service container interval">
             <div class="service-content">
                 <div class="s-c-main">
                     <h3 class="s-c-m-title">
@@ -150,7 +151,7 @@
             </div>
         </div>
 
-        <div class="contact container interval">
+        <div contact class="contact container interval">
             <img src="./images/10.jpg" class="contact-img"/>
 
             <section class="contact-text">
@@ -166,7 +167,7 @@
         </div>
     </body>
 
-    <footer class="footer">
+    <footer footer class="footer">
         <div class="container">
             <div class="f-main">
                 <h3 class="f-m-text">

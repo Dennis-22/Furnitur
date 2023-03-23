@@ -23,6 +23,10 @@
     --faint-black: #2A2A2A;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100vw;
     max-width: 1600px;
