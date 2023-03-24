@@ -18,6 +18,10 @@
     list-style: none;
 }
 
+.desktop-nav-lists > li{
+    cursor: pointer;
+}
+
 .header-socials{
     width: 20%;
     display: flex;
@@ -97,12 +101,16 @@
 
 .m-a-text{
     margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 .m-btn{
     all: unset;
     padding: .5rem 0;
+    cursor: pointer;
 }
+
+.m-btn-icon{margin-left:5px}
 
 .projects{
     display: flex;
@@ -162,11 +170,12 @@
 
 .s-c-s-title{
     margin-bottom: 10px;
+    font-size: var(--normal-font);
     font-weight: var(--semi-bold);
 }
 
 .s-c-s-text{
-
+    color: var(--black-2);
 }
 
 .contact{
@@ -240,6 +249,7 @@
 
 .f-c-wrap > p{
     line-height: 1.6;
+    color: var(--faint-white);
 }
 
 .f-c-title{
@@ -256,6 +266,7 @@
     background-color: #191919;
     padding: .5rem .8rem;
     width: fit-content;
+    border-radius: 4px;
 }
 
 .f-n-btn{

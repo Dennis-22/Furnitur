@@ -13,14 +13,14 @@
 
     /* font weight */
     --bold: 700;
-    --semi-bold:600;
+    --semi-bold:500;
     --light:300;
 
     /* colors */
     --black: #010101;
     --black-2:#333333d0;
-    --faint-white: #E7E7E7;
-    --faint-black: #2A2A2A;
+    --faint-white: #eeeeee75;
+    --faint-black: #e0e0e0;
 }
 
 html{
@@ -32,6 +32,7 @@ body{
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -57,9 +58,10 @@ body{
 }
 
 /* styles for all icons */
-.bx{
+.icon{
     cursor: pointer;
     color: var(--black-2);
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width:768px) {
